@@ -15,9 +15,9 @@ sections:
       username: admin
       text: ""
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
+      # button:
+      #   text: Download CV
+      #   url: uploads/resume.pdf
     design:
       css_class: dark
       background:
@@ -28,80 +28,80 @@ sections:
           filters:
             brightness: 1.0
           size: cover
-          position: center
+          position: static # center
           parallax: false
+   
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: 'My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
-        Please reach out to collaborate 😃
+           My research focuses on addressing the challenges of diagnosing and treating critical human diseases by integrating multimodal data, including imaging, omics, and clinical data. I aim to develop innovative methods to improve the efficiency and accuracy of early diagnosis, particularly for complex diseases. In the area of imaging data, I have utilized generative models to synthesize specific imaging data based on physicians' needs, effectively solving issues related to data scarcity and patient privacy. Additionally, I have employed synthetic data to train models, which has significantly enhanced classification performance.
     design:
       columns: '1'
-  - block: collection
-    id: papers
-    content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
+#   - block: collection
+#     id: papers
+#     content:
+#       title: Featured Publications
+#       filters:
+#         folders:
+#           - publication
+#         featured_only: true
+#     design:
+#       view: article-grid
+#       columns: 2
   - block: collection
     content:
       title: Recent Publications
-      text: ""
+      text: "
+      1.Xiao Yanghua, Xu Yidan. Application of large-scale generative language models in the medical field: opportunities and challenges. Journal of Medical Informatics, 2023, 44(9):1-11.\n
+
+      2.Yidan Xu, Jiaqing Liang, Yaoyao Zhuo, Lei Liu, Yanghua Xiao, Lingxiao Zhou,TDASD: Generating medically significant fine-grained lung adenocarcinoma nodule CT images based on stable diffusion models with limited sample size, Computer Methods and Programs in Biomedicine, Volume 248, 2024,108103,ISSN 0169-2607, https://doi.org/10.1016/j.cmpb.2024.108103."
       filters:
         folders:
           - publication
         exclude_featured: false
     design:
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - event
-    design:
-      view: article-grid
-      columns: 1
-  - block: collection
-    id: news
-    content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: post
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: date-title-summary
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+#   - block: collection
+#     id: talks
+#     content:
+#       title: Recent & Upcoming Talks
+#       filters:
+#         folders:
+#           - event
+#     design:
+#       view: article-grid
+#       columns: 1
+#   - block: collection
+#     id: news
+#     content:
+#       title: Recent News
+#       subtitle: ''
+#       text: ''
+#       # Page type to display. E.g. post, talk, publication...
+#       page_type: post
+#       # Choose how many pages you would like to display (0 = all pages)
+#       count: 5
+#       # Filter on criteria
+#       filters:
+#         author: ""
+#         category: ""
+#         tag: ""
+#         exclude_featured: false
+#         exclude_future: false
+#         exclude_past: false
+#         publication_type: ""
+#       # Choose how many pages you would like to offset by
+#       offset: 0
+#       # Page order: descending (desc) or ascending (asc) date.
+#       order: desc
+#     design:
+#       # Choose a layout view
+#       view: date-title-summary
+#       # Reduce spacing
+#       spacing:
+#         padding: [0, 0, 0, 0]
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
